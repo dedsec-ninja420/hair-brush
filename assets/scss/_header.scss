@@ -1,0 +1,42 @@
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #000;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 70px;
+
+  &.header-scrolled {
+    background: rgba(darken(#000, 15), .9);
+    top: 0;
+  }
+
+  .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    a {
+      color: #fff;
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+
+}
+
+.header-inner-pages {
+  background: rgba(darken($primary, 15), .9) !important;
+}
+
+.topbar-inner-pages {
+  background: rgba(darken($primary, 11), .90) !important;
+}
