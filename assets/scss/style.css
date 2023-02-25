@@ -917,6 +917,7 @@ section {
 }
 .cta .cta-btn:hover {
   background: #fff;
+  color: #000;
 }
 @media (max-width: 1024px) {
   .cta {
@@ -1358,9 +1359,6 @@ section {
   margin-bottom: 0;
   font-size: 14px;
   color: #444444;
-}
-.contact .info .email, .contact .info .phone {
-  margin-top: 40px;
 }
 .contact .php-email-form {
   width: 100%;

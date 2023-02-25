@@ -504,6 +504,7 @@ section {
     color: #fff;
     &:hover {
       background: $secondary;
+      color: #000;
     }
   }
 
@@ -1036,9 +1037,6 @@ section {
       color: $default;
     }
 
-    .email, .phone {
-      margin-top: 40px;
-    }
   }
 
 
