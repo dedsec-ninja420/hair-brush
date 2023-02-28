@@ -81,6 +81,7 @@ section {
 # About Us
 --------------------------------------------------------------*/
 .about {
+  min-height: 100vh;
   padding: 140px 0;
   background: url("../img/img4.webp") no-repeat;
   background-size: cover;
@@ -233,6 +234,11 @@ section {
 .why-us {
   background: lighten($primary, 10);
   padding: 0;
+
+  #haircut, #beard {
+    min-height: 90vh;
+  }
+
   .content {
     padding: 60px 100px 0 100px;
     color: #000;
@@ -432,6 +438,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services {
+  min-height: 100vh;
 
   .btn-learn-more {
     font-family: $font-primary;
@@ -504,6 +511,7 @@ section {
   background: linear-gradient(rgba(darken($primary, 20), .8), rgba(darken($primary, 20), .9)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding:  120px 0;
+  min-height: 45vh;
 
   h3 {
     color: #fff;
@@ -539,7 +547,7 @@ section {
     background-attachment: scroll;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     .cta-btn-container {
       display: flex;
       align-items: center;
@@ -720,7 +728,9 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
   .member {
     position: relative;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
@@ -1014,7 +1024,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-
+  min-height: 45vh;
   background: url("../img/contact-bg.png") left center no-repeat;
   position: relative;
 
@@ -1034,6 +1044,23 @@ section {
   
   .info {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 850px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      width: 60%;
+    }
+
+    .phone, .email {
+      padding-top: 40px;
+    }
+
+  }
 
     i {
       font-size: 20px;

@@ -529,6 +529,7 @@ section {
 # About Us
 --------------------------------------------------------------*/
 .about {
+  min-height: 100vh;
   padding: 140px 0;
   background: url("../img/img4.webp") no-repeat;
   background-size: cover;
@@ -659,6 +660,9 @@ section {
 .why-us {
   background: #1a1a1a;
   padding: 0;
+}
+.why-us #haircut, .why-us #beard {
+  min-height: 90vh;
 }
 .why-us .content {
   padding: 60px 100px 0 100px;
@@ -851,6 +855,9 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  min-height: 100vh;
+}
 .services .btn-learn-more {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
@@ -916,6 +923,7 @@ section {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
+  min-height: 45vh;
 }
 .cta h3 {
   color: #fff;
@@ -949,7 +957,7 @@ section {
     background-attachment: scroll;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .cta .cta-btn-container {
     display: flex;
     align-items: center;
@@ -1095,6 +1103,11 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+.team {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
 .team .member {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1341,6 +1354,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
+  min-height: 45vh;
   background: url("../img/contact-bg.png") left center no-repeat;
   position: relative;
 }
@@ -1358,6 +1372,21 @@ section {
 }
 .contact .info {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 850px) {
+  .contact .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .info a {
+    width: 60%;
+  }
+  .contact .info .phone, .contact .info .email {
+    padding-top: 40px;
+  }
 }
 .contact .info i {
   font-size: 20px;
