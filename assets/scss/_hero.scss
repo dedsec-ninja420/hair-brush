@@ -17,7 +17,7 @@
     position: absolute;
     object-fit: cover;
     z-index: 0;
-  }s
+  }
 
   &:before {
     content: "";
@@ -87,6 +87,24 @@
       color: $primary;
       text-decoration: none;
     }
+  }
+
+  .btn-booking {
+    font-family: $font-primary;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: $primary;
+    background: $secondary;
+    text-decoration: none;
+    animation-delay: 0.8s;
+    border: 1px solid $secondary;
   }
 
   

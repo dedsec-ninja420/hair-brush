@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #000;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: black;
+  color: #fff;
 }
 .navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
   visibility: hidden;
@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
      object-fit: cover;
   z-index: 0;
 }
-s #hero:before {
+#hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -436,6 +436,24 @@ s #hero:before {
   background: #fff;
   color: #000;
   text-decoration: none;
+}
+#hero .btn-booking {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #000;
+  background: #fff;
+  text-decoration: none;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  border: 1px solid #fff;
 }
 @media (min-width: 1024px) {
   #hero p {

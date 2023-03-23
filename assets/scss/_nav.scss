@@ -195,7 +195,7 @@
     left: 15px;
     padding: 10px 0;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #000;
     overflow-y: auto;
     transition: 0.3s;
   }
@@ -207,7 +207,7 @@
   a, a:focus {
     padding: 10px 20px;
     font-size: 15px; 
-    color: darken($primary, 10);
+    color: #fff
   }
 
   a:hover:before, li:hover > a:before, .active:before  {
@@ -215,7 +215,7 @@
   }
 
   a:hover, .active, li:hover > a  {
-    color: $secondary;
+    color: #fff;
   }
 
   .getstarted, .getstarted:focus {
