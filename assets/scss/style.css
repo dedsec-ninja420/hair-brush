@@ -478,6 +478,8 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .section-bg {
@@ -498,7 +500,6 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
-  font-style: italic;
 }
 
 /*--------------------------------------------------------------
@@ -882,7 +883,7 @@ section {
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 32px;
+  padding: 12px 20px;
   border-radius: 5px;
   transition: 0.3s;
   line-height: 1;
@@ -1126,21 +1127,24 @@ section {
   display: flex;
   align-items: center;
 }
+.team .section-title p {
+  color: #1a1a1a;
+}
 .team .member {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 10px;
   background: #fff;
+  min-height: 100%;
 }
 .team .member .pic {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 270px;
-  height: 270px;
+  width: 240px;
   border-radius: 50%;
-  margin: auto;
+  margin: 10px auto;
 }
 .team .member .pic img {
   transition: ease-in-out 0.3s;
@@ -1149,7 +1153,8 @@ section {
   transform: scale(1.1);
 }
 .team .member .member-info {
-  padding-left: 30px;
+  width: 90%;
+  margin: auto;
 }
 .team .member h4 {
   font-weight: 700;
@@ -2036,6 +2041,7 @@ section {
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
+  font-weight: 300;
   margin-bottom: 0;
   font-family: "Oswald", sans-serif;
   color: #fff;
@@ -2077,7 +2083,7 @@ section {
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #333333;
+  color: #cccccc;
   font-size: 18px;
   line-height: 1;
 }

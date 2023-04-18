@@ -70,6 +70,7 @@
       p {
         font-size: 14px;
         line-height: 24px;
+        font-weight: 300;
         margin-bottom: 0;
         font-family: $font-primary;
         color: $white;
@@ -116,7 +117,7 @@
 
         i {
           padding-right: 2px;
-          color: lighten(#000, 20);
+          color: darken($white, 20);
           font-size: 18px;
           line-height: 1;
         }
