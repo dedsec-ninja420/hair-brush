@@ -22,21 +22,9 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 
-    a {
-      color: #fff;
-    }
-
     img {
       max-height: 40px;
     }
   }
 
-}
-
-.header-inner-pages {
-  background: rgba(darken($primary, 15), .9) !important;
-}
-
-.topbar-inner-pages {
-  background: rgba(darken($primary, 11), .90) !important;
 }

@@ -4,8 +4,6 @@
 section {
   padding: 60px 0;
   overflow: hidden;
-  display: flex;
-  align-items: center;
 }
 
 .section-bg {
@@ -230,9 +228,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
+# Services Accordions
 --------------------------------------------------------------*/
-.why-us {
+.services-accordions {
   background: lighten($primary, 10);
   padding: 0;
 
