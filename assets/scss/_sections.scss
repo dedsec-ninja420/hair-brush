@@ -82,7 +82,7 @@ section {
 .about {
   min-height: 100vh;
   padding: 140px 0;
-  background: url("../img/img4.webp") no-repeat;
+  background: url("../img/background.webp") no-repeat;
   background-size: cover;
   position: relative;
 
@@ -507,7 +507,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(darken($primary, 20), .8), rgba(darken($primary, 20), .9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(darken($primary, 20), .8), rgba(darken($primary, 20), .7)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding:  120px 0;
   min-height: 45vh;
@@ -637,17 +637,6 @@ section {
 
       .details-link {
         right: 15px;
-      }
-      
-    }
-
-    &:hover {
-      img {
-        top:-30px;
-      }
-      .portfolio-info {
-        opacity: 1;
-        bottom: 0;
       }
     }
   }
