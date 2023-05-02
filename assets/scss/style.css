@@ -749,74 +749,6 @@ section {
 .services-accordions .accordion-list a.collapsed .icon-close {
   display: none;
 }
-.services-accordions .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(#000 50%, rgba(0, 0, 0, 0.4) 52%);
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
-  overflow: hidden;
-}
-.services-accordions .play-btn::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-.services-accordions .play-btn::before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-          animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-          animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-          animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(0, 0, 0, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-.services-accordions .play-btn:hover::after {
-  border-left: 15px solid #000;
-  transform: scale(20);
-}
-.services-accordions .play-btn:hover::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  -webkit-animation: none;
-          animation: none;
-  border-radius: 0;
-}
 @media (max-width: 1024px) {
   .services-accordions .content, .services-accordions .accordion-list {
     padding-left: 0;
@@ -1101,9 +1033,7 @@ section {
   min-height: 90vh;
   display: flex;
   align-items: center;
-}
-.team .section-title p {
-  color: #1a1a1a;
+  background-color: #fff;
 }
 .team .member {
   position: relative;
@@ -1357,7 +1287,6 @@ section {
 --------------------------------------------------------------*/
 .contact {
   min-height: 45vh;
-  background: url("../img/contact-bg.png") left center no-repeat;
   position: relative;
 }
 .contact:before {
